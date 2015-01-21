@@ -112,7 +112,7 @@ public class BobTest
         assertThat(result, equalTo('Sure.'));
     }
 
-    [Test][Ignore]
+    [Test]
     public function silence():void
     {
         var result:String = bob.hey('');

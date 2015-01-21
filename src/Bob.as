@@ -11,7 +11,11 @@ package
 		
 		public function hey(phrase:String):String
 		{
-			trace(phrase)
+			if(_isSilence(phrase)) {
+				
+				return 'Fine. Be that way!';
+			}
+			
 			if(_isShouting(phrase)) {
 				
 				return 'Whoa, chill out!';
@@ -35,6 +39,12 @@ package
 		private function _isQuestion(phrase:String):Boolean
 		{
 			return phrase.lastIndexOf('?') == phrase.length - 1;
+		}
+		
+		
+		private function _isSilence(phrase:String):Boolean
+		{
+			return /^\s*$/g.test(phrase);
 		}
 		
 	}
