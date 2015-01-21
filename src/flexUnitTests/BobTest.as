@@ -119,7 +119,7 @@ public class BobTest
         assertThat(result, equalTo('Fine. Be that way!'));
     }
 
-    [Test][Ignore]
+    [Test]
     public function prolonged_silence():void
     {
         var result:String = bob.hey('   ');
