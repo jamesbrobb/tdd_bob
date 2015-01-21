@@ -12,6 +12,7 @@ package
 		public function hey(phrase:String):String
 		{
 			if(isShouting(phrase)) {
+				
 				return 'Whoa, chill out!';
 			}
 			
@@ -26,7 +27,7 @@ package
 		
 		private function isShouting(phrase:String):Boolean
 		{
-			return /^[^a-z]+$/.test(phrase);
+			return /^[^a-z]+$/.test(phrase) && /^(.*?[A-Z]){1,}.*$/.test(phrase);
 		}
 		
 	}
