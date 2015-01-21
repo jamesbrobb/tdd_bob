@@ -70,7 +70,7 @@ public class BobTest
         assertThat(result, equalTo('Sure.'));
     }
 
-    [Test][Ignore]
+    [Test]
     public function shouting_with_special_characters():void
     {
         var result:String = bob.hey('ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!');
