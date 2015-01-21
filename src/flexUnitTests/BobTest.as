@@ -35,7 +35,7 @@ public class BobTest
         assertThat(result, equalTo('Whatever.'));
     }
 
-    [Test][Ignore]
+    [Test]
     public function using_acronyms_in_regular_speech():void
     {
         var result:String = bob.hey("It's OK if you don't want to go to the DMV.");
