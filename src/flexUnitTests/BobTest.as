@@ -6,6 +6,7 @@ import rules.PhraseRule;
 import rules.QuestionRule;
 import rules.ShoutingRule;
 import rules.SilenceRule;
+import rules.DefaultRule;
 
 public class BobTest
 {
