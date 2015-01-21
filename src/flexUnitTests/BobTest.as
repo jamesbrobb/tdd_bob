@@ -105,7 +105,7 @@ public class BobTest
         assertThat(result, equalTo('Whatever.'));
     }
 
-    [Test][Ignore]
+    [Test]
     public function prattling_on():void
     {
         var result:String = bob.hey('Wait! Hang on.  Are you going to be OK?');
