@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testrun name="" >
 <testsuite  name="Default Test Suite" project="bob_test">
-<testsuite name="flexUnitTests:BobTest" type="testsuiteclass"/>
+<testsuite name="flexUnitTests:BobTest" type="testcaseclass">
+<testcase name="calmly_speaking_about_umlauts" classname="flexUnitTests:BobTest"/>
+<testcase name="asking_a_question" classname="flexUnitTests:BobTest"/>
+<testcase name="silence" classname="flexUnitTests:BobTest"/>
+<testcase name="shouting_with_special_characters" classname="flexUnitTests:BobTest"/>
+<testcase name="talking_forcefully" classname="flexUnitTests:BobTest"/>
+<testcase name="prolonged_silence" classname="flexUnitTests:BobTest"/>
+<testcase name="shouting_with_umlauts" classname="flexUnitTests:BobTest"/>
+<testcase name="using_acronyms_in_regular_speech" classname="flexUnitTests:BobTest"/>
+<testcase name="question_with_only_numbers" classname="flexUnitTests:BobTest"/>
+<testcase name="forceful_questions" classname="flexUnitTests:BobTest"/>
+<testcase name="shouting_with_no_exclamation_mark" classname="flexUnitTests:BobTest"/>
+<testcase name="shouting_numbers" classname="flexUnitTests:BobTest"/>
+<testcase name="stating_something" classname="flexUnitTests:BobTest"/>
+<testcase name="statement_containing_question_mark" classname="flexUnitTests:BobTest"/>
+<testcase name="only_numbers" classname="flexUnitTests:BobTest"/>
+<testcase name="shouting" classname="flexUnitTests:BobTest"/>
+<testcase name="prattling_on" classname="flexUnitTests:BobTest"/>
+</testsuite>
 </testsuite>
 <portNumber value="8765" />
 </testrun>

@@ -11,16 +11,22 @@ package
 		
 		public function hey(phrase:String):String
 		{
-			if(phrase == 'WATCH OUT!') {
-				
+			if(isShouting(phrase)) {
 				return 'Whoa, chill out!';
+			}
 			
-			}else if(phrase == 'Does this cryogenic chamber make me look fat?'){
+			if(phrase == 'Does this cryogenic chamber make me look fat?'){
 				
 				return 'Sure.';
 			}
 			
 			return 'Whatever.';	
+		}
+		
+		
+		private function isShouting(phrase:String):Boolean
+		{
+			return /^[^a-z]+$/.test(phrase);
 		}
 		
 	}

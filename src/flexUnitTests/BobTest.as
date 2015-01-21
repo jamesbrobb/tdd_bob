@@ -42,7 +42,7 @@ public class BobTest
         assertThat(result, equalTo('Whatever.'));
     }
 
-    [Test][Ignore]
+    [Test]
     public function forceful_questions():void
     {
         var result:String = bob.hey('WHAT THE HELL WERE YOU THINKING?');
