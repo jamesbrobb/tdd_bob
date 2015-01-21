@@ -91,7 +91,7 @@ public class BobTest
         assertThat(result, equalTo('Whatever.'));
     }
 
-    [Test][Ignore]
+    [Test]
     public function shouting_with_no_exclamation_mark():void
     {
         var result:String = bob.hey('I HATE YOU');
