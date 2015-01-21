@@ -28,7 +28,7 @@ public class BobTest
         assertThat(result, equalTo('Sure.'));
     }
 
-    [Test][Ignore]
+    [Test]
     public function talking_forcefully():void
     {
         var result:String = bob.hey("Let's go make out behind the gym!");
