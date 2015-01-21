@@ -2,10 +2,27 @@ package flexUnitTests
 {
 import org.hamcrest.assertThat;
 import org.hamcrest.object.equalTo;
+import rules.PhraseRule;
+import rules.QuestionRule;
+import rules.ShoutingRule;
+import rules.SilenceRule;
 
 public class BobTest
 {
-    private var bob:Bob = new Bob();
+    private var bob:Bob;
+	private var rules :Array = [new SilenceRule(), new ShoutingRule(), new QuestionRule(), new DefaultRule()];
+	
+	[Before]
+	public function before():void
+	{
+		bob = new Bob(Vector.<PhraseRule>(rules));
+	}
+	
+	[After]
+	public function after():void
+	{
+		bob = null;
+	}
 
     [Test]
     public function stating_something():void

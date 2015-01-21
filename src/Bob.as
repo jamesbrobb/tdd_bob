@@ -1,50 +1,32 @@
 package
 {
+	import rules.PhraseRule;
+
 	public class Bob
 	{
 		
-		public function Bob()
+		private var _rules		: Vector.<PhraseRule>;
+		
+		
+		
+		public function Bob(rules:Vector.<PhraseRule>)
 		{
 			super();
+			
+			_rules = rules;
 		}
 		
 		
 		public function hey(phrase:String):String
 		{
-			if(_isSilence(phrase)) {
-				
-				return 'Fine. Be that way!';
+			var reply : String;
+			
+			for each (var rule:PhraseRule in _rules) 
+			{
+				if(rule.test(phrase)) break;
 			}
 			
-			if(_isShouting(phrase)) {
-				
-				return 'Whoa, chill out!';
-			}
-			
-			if(_isQuestion(phrase)) {
-				
-				return 'Sure.';
-			}
-			
-			return 'Whatever.';	
-		}
-		
-		
-		private function _isShouting(phrase:String):Boolean
-		{
-			return phrase == phrase.toUpperCase() && /[A-z]+/g.test(phrase);
-		}
-		
-		
-		private function _isQuestion(phrase:String):Boolean
-		{
-			return phrase.lastIndexOf('?') == phrase.length - 1;
-		}
-		
-		
-		private function _isSilence(phrase:String):Boolean
-		{
-			return /^\s*$/g.test(phrase);
+			return rule.getReply();
 		}
 		
 	}
