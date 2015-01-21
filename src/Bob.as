@@ -11,7 +11,12 @@ package
 		
 		public function hey(phrase:String):String
 		{
-			return 'Whatever.';
+			if(phrase == 'WATCH OUT!') {
+				
+				return 'Whoa, chill out!';
+			}
+			
+			return 'Whatever.';	
 		}
 		
 	}
