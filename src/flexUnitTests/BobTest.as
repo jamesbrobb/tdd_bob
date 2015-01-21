@@ -21,7 +21,7 @@ public class BobTest
         assertThat(result, equalTo('Whoa, chill out!'));
     }
 
-    [Test][Ignore]
+    [Test]
     public function asking_a_question():void
     {
         var result:String = bob.hey('Does this cryogenic chamber make me look fat?');

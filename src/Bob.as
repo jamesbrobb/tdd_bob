@@ -14,6 +14,10 @@ package
 			if(phrase == 'WATCH OUT!') {
 				
 				return 'Whoa, chill out!';
+			
+			}else if(phrase == 'Does this cryogenic chamber make me look fat?'){
+				
+				return 'Sure.';
 			}
 			
 			return 'Whatever.';	
