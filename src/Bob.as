@@ -11,6 +11,7 @@ package
 		
 		public function hey(phrase:String):String
 		{
+			trace(phrase)
 			if(_isShouting(phrase)) {
 				
 				return 'Whoa, chill out!';
@@ -27,7 +28,7 @@ package
 		
 		private function _isShouting(phrase:String):Boolean
 		{
-			return /^[^a-z]+$/.test(phrase) && /^(.*?[A-Z]){1,}.*$/.test(phrase);
+			return phrase == phrase.toUpperCase() && /[A-z]+/g.test(phrase);
 		}
 		
 		
