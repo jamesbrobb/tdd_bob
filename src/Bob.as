@@ -9,6 +9,11 @@ package
 		}
 		
 		
+		public function hey(phrase:String):String
+		{
+			return 'Whatever.';
+		}
+		
 	}
 	
 }
