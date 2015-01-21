@@ -77,7 +77,7 @@ public class BobTest
         assertThat(result, equalTo('Whoa, chill out!'));
     }
 
-    [Test][Ignore]
+    [Test]
     public function shouting_with_umlauts():void
     {
         var result:String = bob.hey("\xdcML\xc4\xdcTS!");
