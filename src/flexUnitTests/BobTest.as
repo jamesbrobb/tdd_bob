@@ -63,7 +63,7 @@ public class BobTest
         assertThat(result, equalTo('Whatever.'));
     }
 
-    [Test][Ignore]
+    [Test]
     public function question_with_only_numbers():void
     {
         var result:String = bob.hey('4?');
